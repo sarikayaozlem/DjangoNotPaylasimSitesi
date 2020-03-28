@@ -1,0 +1,1 @@
+"# Django Not Paylaüçm Sitesi"  
