@@ -85,6 +85,7 @@
       <workItem from="1585129347911" duration="9432000" />
       <workItem from="1585231951770" duration="617000" />
       <workItem from="1585395462769" duration="813000" />
+      <workItem from="1585396297702" duration="313000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm Upload Deneme">
       <created>1585395754694</created>
@@ -107,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1585396173663</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Pycharm Upload Deneme">
+      <created>1585396342543</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585396342543</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Pycharm Upload Deneme">
+      <created>1585396437337</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1585396437337</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,10 +147,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585395525637" />
-    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1585396172722">
+    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1585396436704">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585396172722" />
+    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585396436704" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585395984360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -144,13 +159,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583424645912" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585396298564">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1585396681883">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585396298564" />
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585396324263">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1585396681883" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585396684550">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585396324263" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1585396684550" />
   </component>
 </project>
