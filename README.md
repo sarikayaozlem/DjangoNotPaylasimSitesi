@@ -1,1 +1,1 @@
-"# Django Not Paylaşım Sitesi"  
+"# Django Not Paylasim Sitesi"  
