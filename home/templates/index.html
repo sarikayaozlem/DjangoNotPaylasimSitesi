@@ -1,15 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>İlk Sayfam</title>
-</head>
-<body>
-<h1>Hoş Geldin Django</h1>
-<h3>Django Not Paylaşımm Sitesi</h3>
-<p>
-    {{ text |safe}}
-</p>
+{% extends "homebase.html" %}
 
-</body>
-</html>
+{% block title %}İndex Sayfası{% endblock %}
+{% block keywords %}İndex Sayfası anahtar kelimeler{% endblock %}
+{% block description %}İndex Sayfası açıklama{% endblock %}
+
+
+{% block slider %}
+    {% include "slider.html" %}
+{% endblock %}
+
+{% block sidebar %}
+    {% include "sidebar.html" %}
+{% endblock %}
+
+{% block content %}
+    {% include "content.html" %}
+{% endblock %}
