@@ -31,7 +31,7 @@ class Note(models.Model):
     title = models.CharField(max_length=75)
     keywords = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
-    image = models.ImageField(blank=True, upload_to='images/')
+    file = models.FileField(blank=True, upload_to='files/')
     detail = models.TextField()
     status = models.CharField(max_length=10, choices=STATUS)
     create_at = models.DateTimeField(auto_now_add=True)
