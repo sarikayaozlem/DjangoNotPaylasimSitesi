@@ -4,10 +4,9 @@
     <list default="true" id="14d01286-8ffb-455e-8991-c9b8e07a3ef8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <workItem from="1585680655705" duration="9000" />
       <workItem from="1585756995556" duration="81000" />
       <workItem from="1585921462205" duration="3560000" />
-      <workItem from="1586167698203" duration="7710000" />
+      <workItem from="1586167698203" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm Upload Deneme">
       <created>1585395754694</created>
@@ -186,7 +185,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585924853264</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Pycharm #6 Admin File Show">
+      <created>1586177754484</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586177754484</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +215,8 @@
     <MESSAGE value="Pycharm #3 Upload File" />
     <MESSAGE value="Pycharm #4 Home Css Web Template" />
     <MESSAGE value="Pycharm #5 Admin File Archive" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #5 Admin File Archive" />
+    <MESSAGE value="Pycharm #6 Admin File Show" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #6 Admin File Show" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585434328378">
@@ -220,10 +227,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585395525637" />
-    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1585924852559">
+    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1586177753805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1585924852559" />
+    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586177753805" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585395984360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,17 +255,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="246" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585397793508" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1585924929465">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586177768657">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1585924929465" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586177768657" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586167700462">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586167700462" />
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586177704231">
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586180218803">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586177704231" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586180218803" />
   </component>
 </project>
