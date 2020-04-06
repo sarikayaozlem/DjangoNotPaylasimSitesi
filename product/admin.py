@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from product.models import Category, Note, Files
+from product.models import Category, Product, Files
 
 
 class NoteFileInline(admin.TabularInline):
@@ -14,9 +14,10 @@ class CategoryAdmin(admin.ModelAdmin):
     list_filter = ['status']
 
 
-class NoteAdmin(admin.ModelAdmin):
-    list_display = ['title', 'category', 'status']
-    list_filter = ['status','category']
+class ProductAdmin(admin.ModelAdmin):
+    list_display = ['title', 'category', 'file_tag', 'status']
+    readonly_fields = ('file_tag',)
+    list_filter = ['status', 'category']
     inlines = [NoteFileInline]
 
 
@@ -25,5 +26,5 @@ class FilesAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Category,CategoryAdmin)
-admin.site.register(Note,NoteAdmin)
+admin.site.register(Product,ProductAdmin)
 admin.site.register(Files,FilesAdmin)

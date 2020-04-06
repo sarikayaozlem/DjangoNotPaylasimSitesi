@@ -1,7 +1,11 @@
 from django.db import models
-
+from django.utils.safestring import mark_safe
 
 # Create your models here.
+#from django.utils.safestring import mark_safe
+
+
+
 class Category(models.Model):
     STATUS = (
         ('True', 'Evet'),
@@ -22,7 +26,7 @@ class Category(models.Model):
 
 
 
-class Note(models.Model):
+class Product(models.Model):
     STATUS = (
         ('True', 'Evet'),
         ('False', 'Hayır'),
@@ -40,9 +44,16 @@ class Note(models.Model):
     def __str__(self):
         return self.title
 
+    def file_tag(self):
+        return mark_safe('<img src="{}" height="50"/>'.format(self.file.url))
+    file_tag.short_description = 'File'
+
+
+
 class Files(models.Model):
-    note = models.ForeignKey(Note, on_delete=models.CASCADE)
-    title = models.CharField(max_length=50,blank=True)
+    note = models.ForeignKey(Product, on_delete=models.CASCADE)
+    title = models.CharField(max_length=50, blank=True)
     file = models.FileField(blank=True, upload_to='files/')
+
     def __str__(self):
         return self.title
