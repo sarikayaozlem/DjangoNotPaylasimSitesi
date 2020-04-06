@@ -45,7 +45,10 @@ class Product(models.Model):
         return self.title
 
     def file_tag(self):
-        return mark_safe('<img src="{}" height="50"/>'.format(self.file.url))
+        if self.file:
+            return mark_safe('<img src="{}" height="50"/>'.format(self.file.url))
+        else:
+            return 'No Image'
     file_tag.short_description = 'File'
 
 
