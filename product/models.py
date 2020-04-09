@@ -1,3 +1,4 @@
+from ckeditor_uploader.fields import RichTextUploadingField
 from django.db import models
 from django.utils.safestring import mark_safe
 
@@ -36,7 +37,7 @@ class Product(models.Model):
     keywords = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
     file = models.FileField(blank=True, upload_to='files/')
-    detail = models.TextField()
+    detail = RichTextUploadingField()
     status = models.CharField(max_length=10, choices=STATUS)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
