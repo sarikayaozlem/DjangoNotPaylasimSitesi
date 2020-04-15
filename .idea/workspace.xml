@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14d01286-8ffb-455e-8991-c9b8e07a3ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/home/templates/referanslarimiz.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +103,8 @@
       <workItem from="1585921462205" duration="3560000" />
       <workItem from="1586167698203" duration="10015000" />
       <workItem from="1586190450006" duration="3100000" />
-      <workItem from="1586405864186" duration="9388000" />
+      <workItem from="1586405864186" duration="9856000" />
+      <workItem from="1586948868266" duration="6722000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm Upload Deneme">
       <created>1585395754694</created>
@@ -220,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586409243297</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Pycharm #10 Hakkımızda Referaranslar Iletisim">
+      <created>1586417091458</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1586417091458</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,7 +252,8 @@
     <MESSAGE value="Pycharm #7 Home Setting" />
     <MESSAGE value="Pycharm #8 Home Favicon" />
     <MESSAGE value="Pycharm #9 Admin Panel Ckeditor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #9 Admin Panel Ckeditor" />
+    <MESSAGE value="Pycharm #10 Hakkımızda Referaranslar Iletisim" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #10 Hakkımızda Referaranslar Iletisim" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Notifications" timestamp="1585434328378">
@@ -258,10 +264,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585395525637" />
-    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1586409242530">
+    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1586417090727">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586409242530" />
+    <state x="106" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1586417090727" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585395984360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -286,17 +292,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="246" height="185" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1585397793508" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586409255885">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1586417099800">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586409255885" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586405945453">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1586417099800" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1586948891320">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586405945453" />
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586417016629">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586948891320" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586955980517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586417016629" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1586955980517" />
   </component>
 </project>
