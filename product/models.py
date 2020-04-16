@@ -36,8 +36,9 @@ class Product(models.Model):
     title = models.CharField(max_length=125)
     keywords = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
-    file = models.FileField(blank=True, upload_to='files/')
+    image = models.FileField(blank=True, upload_to='images/')
     detail = RichTextUploadingField()
+    slug = models.SlugField(blank=True, max_length=125)
     status = models.CharField(max_length=10, choices=STATUS)
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
@@ -46,8 +47,8 @@ class Product(models.Model):
         return self.title
 
     def file_tag(self):
-        if self.file:
-            return mark_safe('<img src="{}" height="50"/>'.format(self.file.url))
+        if self.image:
+            return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
         else:
             return 'No Image'
     file_tag.short_description = 'File'

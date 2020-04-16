@@ -3,11 +3,13 @@ from django.shortcuts import render
 from django.contrib import messages
 # Create your views here.
 from home.models import Setting, ContactFormu, ContactFormMessage
+from product.models import Product
 
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting}
+    sliderdata = Product.objects.all()[:4]
+    context = {'setting': setting, 'sliderdata': sliderdata}
     return render(request, 'index.html', context)
 
 def hakkimizda(request):
