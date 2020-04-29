@@ -8,6 +8,8 @@
 							<li data-target="#slider-carousel" data-slide-to="0"></li>
                             <li data-target="#slider-carousel" data-slide-to="1" ></li>
                             <li data-target="#slider-carousel" data-slide-to="2"></li>
+                            <li data-target="#slider-carousel" data-slide-to="3"></li>
+
 						</ol>
 
                             <div class="carousel-inner">
@@ -15,19 +17,18 @@
 
                                         <div class="col-sm-6">
                                             <h1><span>E</span>-SHOPPER</h1>
-                                            <h2>Teknoloji</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur  </p>
-                                            <button type="button" class="btn btn-default get">Nota bak</button>
+                                            <h2>{{sliderone.title}}</h2>
+                                            <p>{{sliderone.description}}</p>
+                                            <a href="/product/{{ sliderone.id }}/{{ sliderone.slug }}" type="button" class="btn btn-default get">Nota bak</a>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="http://127.0.0.1:8000/uploads/images/Teknoloji_ozxoctC.jpg" class="" alt="" />
+                                            <img src="{{sliderone.image.url}}" class="girl img-responsive" alt="" />
 
                                         </div>
 
                                 </div>
                                 {% for rs in sliderdata %}
                                     <div class="item">
-
                                             <div class="col-sm-6">
                                                 <h1><span>E</span>-SHOPPER</h1>
                                                 <h2>{{rs.title}}</h2>
@@ -38,7 +39,6 @@
                                                 <img src=" {{rs.image.url}} " class="girl img-responsive" alt="" />
 
                                             </div>
-
                                     </div>
                                  {% endfor %}
                             </div>
