@@ -11,7 +11,10 @@ def index(request):
     sliderdata = Product.objects.all()[1:5]
     sliderone = Product.objects.only()[0]
     category = Category.objects.all()
-    context = {'setting': setting, 'sliderdata': sliderdata, 'sliderone': sliderone, 'category': category}
+    context = {'setting': setting,
+               'sliderdata': sliderdata,
+               'sliderone': sliderone,
+               'category': category}
     return render(request, 'index.html', context)
 
 def hakkimizda(request):
@@ -45,3 +48,12 @@ def iletisim(request):
     context = {'setting': setting, 'form': form}
     return render(request, 'iletisim.html', context)
 
+
+def category_products(request, id, slug):
+    category = Category.objects.all()
+    categorydata = Category.objects.get(pk=id)
+    products = Product.objects.filter(category_id=id)
+    context = {'products': products,
+               'category': category,
+               'categorydata': categorydata}
+    return render(request, 'products.html', context)
