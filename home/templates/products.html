@@ -13,15 +13,14 @@
 {% block sidebar %}{% include 'sidebar.html' %}{% endblock %}
 
 {% block content %}
-    <section id="cart_items">
-        <div class="container">
+    <div class="col-sm-9">
             <div class="breadcrumbs">
                 <ol class="breadcrumb">
                     <li><a href="http://127.0.0.1:8000/">Home</a><li>/</li></li>
                     <li class="active">{{categorydata.title}}</li>
                 </ol>
             </div><!--/breadcrums-->
-
+    </div>
             <div id="contact-page" class="container">
                 <div class="bg">
                     <div class="row">
@@ -70,4 +69,6 @@
             </div>
         </div>
     </section>
+    </div>
 {% endblock %}
+
