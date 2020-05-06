@@ -22,9 +22,13 @@
                                             <a href="/product/{{ sliderone.id }}/{{ sliderone.slug }}" type="button" class="btn btn-default get">Nota bak</a>
                                         </div>
                                         <div class="col-sm-6">
-                                            <img src="{{sliderone.image.url}}" class="girl img-responsive" alt="" style="height: 350px"/>
-
+                                            <a href="/product/{{ sliderone.id }}/{{ sliderone.slug }}">
+                                                <img src="{{sliderone.image.url}}" class="girl img-responsive" alt="" style="height: 350px"/>
+                                            </a>
                                         </div>
+
+
+
 
                                 </div>
                                 {% for rs in sliderdata %}
@@ -36,8 +40,9 @@
                                                 <a href="/product/{{ rs.id }}/{{ rs.slug }}" type="button" class="btn btn-default get">Nota bak</a>
                                             </div>
                                             <div class="col-sm-6">
-                                                <img src=" {{rs.image.url}} " class="girl img-responsive" alt="" style="height: 350px"/>
-
+                                                 <a href="/product/{{ rs.id }}/{{ rs.slug }}">
+                                                     <img src=" {{rs.image.url}} " class="girl img-responsive" alt="" style="height: 350px"/>
+                                                 </a>
                                             </div>
                                     </div>
                                  {% endfor %}
