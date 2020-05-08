@@ -3,7 +3,7 @@ from django.shortcuts import render
 from django.contrib import messages
 # Create your views here.
 from home.models import Setting, ContactFormu, ContactFormMessage
-from product.models import Product, Category, Files
+from product.models import Product, Category, Files, Comment
 
 
 def index(request):
@@ -66,11 +66,13 @@ def category_products(request, id, slug):
     return render(request, 'products.html', context)
 
 
-def product_detail(request, id ,slug):
+def product_detail(request, id, slug):
     category = Category.objects.all()
     product = Product.objects.get(pk=id)
-    images =Files.objects.filter(note_id=id)
+    images = Files.objects.filter(note_id=id)
+    comments = Comment.objects.filter(product_id=id, status='True')
     context = {'product': product,
                'category': category,
-               'images': images}
+               'images': images,
+               'comments': comments}
     return render(request, 'product_detail.html', context)
