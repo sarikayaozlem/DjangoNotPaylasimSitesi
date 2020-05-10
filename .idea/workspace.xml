@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14d01286-8ffb-455e-8991-c9b8e07a3ef8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/home/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/hakkimizda.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/hakkimizda.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/referanslarimiz.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/referanslarimiz.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
     </list>
@@ -148,7 +147,8 @@
       <workItem from="1589047785430" duration="120000" />
       <workItem from="1589065609281" duration="2303000" />
       <workItem from="1589074455049" duration="1390000" />
-      <workItem from="1589111008378" duration="4242000" />
+      <workItem from="1589111008378" duration="4407000" />
+      <workItem from="1589118724382" duration="5500000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm Upload Deneme">
       <created>1585395754694</created>
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589111088580</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Pycharm #18 User Login and Logout">
+      <created>1589115870298</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1589115870298</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,7 +393,8 @@
     <MESSAGE value="Pycharm #15 Product Review, Add Points" />
     <MESSAGE value="Pycharm #16 Product Search" />
     <MESSAGE value="Pycharm #17 JQuery and Slug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #17 JQuery and Slug" />
+    <MESSAGE value="Pycharm #18 User Login and Logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #18 User Login and Logout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1587017881753">
@@ -401,10 +409,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588937502313" />
-    <state x="172" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1589111087387">
+    <state x="172" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1589115869081">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="172" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589111087387" />
+    <state x="172" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589115869081" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585395984360">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -429,17 +437,21 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="238" height="177" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1588173293980" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1589111091589">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1589115872473">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589111091589" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589111008288">
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589115872473" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1589118726827">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589111008288" />
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589115807493">
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589118726827" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589125082367">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589115807493" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589125082367" />
+    <state x="425" y="206" key="search.everywhere.popup" timestamp="1589119087762">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="425" y="206" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589119087762" />
   </component>
 </project>
