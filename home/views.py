@@ -1,5 +1,6 @@
 import json
 
+from django.contrib.auth import logout, authenticate, login
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib import messages
@@ -31,13 +32,17 @@ def index(request):
     return render(request, 'index.html', context)
 
 def hakkimizda(request):
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting}
+    context = {'setting': setting,
+               'category': category,}
     return render(request, 'hakkimizda.html', context)
 
 def referanslar(request):
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
-    context = {'setting': setting}
+    context = {'setting': setting,
+               'category': category,}
     return render(request, 'referanslarimiz.html', context)
 
 def iletisim(request):
@@ -55,10 +60,10 @@ def iletisim(request):
             messages.success(request, "Mesajınız başarı ile gönderilmiştir. Teşekkür ederiz")
             return HttpResponseRedirect('/iletisim')
 
-
+    category = Category.objects.all()
     setting = Setting.objects.get(pk=1)
     form = ContactFormu()
-    context = {'setting': setting, 'form': form}
+    context = {'setting': setting, 'form': form, 'category': category,}
     return render(request, 'iletisim.html', context)
 
 
@@ -119,3 +124,27 @@ def product_search_auto(request):
         data = 'fail'
     mimetype = 'application/json'
     return HttpResponse(data, mimetype)
+
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect('/')
+    # Redirect to a success page.
+
+def login_view(request):
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        user = authenticate(request, username=username, password=password)
+        if user is not None:
+            login(request, user)
+            # Redirect to a success page.
+            return HttpResponseRedirect('/')
+        else:
+            messages.warning(request, "Kullanıcı adı veya şifre hatalı!")
+            return HttpResponseRedirect('/login')
+
+
+    category = Category.objects.all()
+    context = {'category': category}
+
+    return render(request, 'login.html', context)
