@@ -1,5 +1,24 @@
 {% load static %}
+
+
+<script>
+    $(function() {
+        $("#query").autocomplete({
+            source: "/search_auto/",
+            select: function (event, ui) { //item selected
+                AutoCompleteSelectHandler(event, ui)
+        },
+        minLength: 2,
+        });
+    });
+
+    function AutoCompleteSelectHandler(event, ui)
+    {
+        var selectedObj = ui.item;
+    }
+</script>
 <header id="header"><!--header-->
+
 		<div class="header_top"><!--header_top-->
 			<div class="container">
 				<div class="row">
@@ -25,6 +44,10 @@
 				</div>
 			</div>
 		</div><!--/header_top-->
+
+
+
+
 
 		<div class="header-middle"><!--header-middle-->
 			<div class="container">
@@ -72,10 +95,11 @@
 			</div>
 		</div><!--/header-middle-->
 
+
 		<div class="header-bottom"><!--header-bottom-->
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-9">
+					<div class="col-sm-7">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 								<span class="sr-only">Toggle navigation</span>
@@ -97,30 +121,37 @@
 										<li><a href="login.html">Login</a></li>
                                     </ul>
                                 </li>
-								<li class="dropdown"><a href="#">Blog<i class="fa fa-angle-down"></i></a>
-                                    <ul role="menu" class="sub-menu">
-                                        <li><a href="blog.html">Blog List</a></li>
-										<li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
 								<li><a href="/referanslar">Referanslar</a></li>
                                 <li><a href="/iletisim">İletişim</a></li>
 								<li><a href="contact-us.html">Contact</a></li>
 							</ul>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-sm-5">
+
                         <form action="/search/" method="post">
                             {% csrf_token %}
-                            <div class="searchform pull-right" >
 
-                                <input type="text"  name="query" placeholder="Search"/>
+                            <select name="catid" class="col-sm-4" style="height: 36px">
+                                <option value="0">All Categories</option>
+                                    {% load mptt_tags %}
+                                    {% recursetree category %}
+                                        {% if node.is_leaf_node %}<option value="{{ node.id }}">{{ node.title }}</option>{% endif %}
+                                        {% if not node.is_leaf_node %}
+                                            <optgroup label="{{ node.title }}">
+                                                {{ children }}
+                                            </optgroup>
+                                        {% endif %}
+                                    {% endrecursetree %}
+                            </select>
+
+                            <div class="searchform" >
+                                <input id="query" name="query" type="text" placeholder="Search"/>
                                 <button class="fa fa-search" style="height: 34px"></button>
-
                             </div>
                         </form>
-					</div>
-				</div>
+					    </div>
+				    </div>
 			</div>
 		</div><!--/header-bottom-->
 	</header><!--/header-->
