@@ -1,0 +1,79 @@
+{% extends "homebase.html" %}
+
+
+
+{% block title %}User Panel {{ setting.company }}{% endblock %}
+{% block keywords %}{{ setting.keywords }}{% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+
+{% block content %}
+    <section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a>
+                <li>/</li>
+                </li>
+                <li class="active">User Profile</li>
+                <hr>
+                <div id="contact-page" class="container">
+                    <div class="bg">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <div class="col-sm-3">
+                                    {% include "user_panel.html" %}
+                                </div>
+
+                                <div class="col-sm-8">
+                                    <div class="contact-info">
+                                        <h2 class="title text-center">User Information</h2>
+
+                                        <table class="table table-responsive">
+                                            <tr class="">
+                                                <th class="">Image</th>
+                                                <td class="text-left">{{profile.image_tag}}</td>
+                                            </tr>
+                                            <tr class="">
+                                                <th class="text-left">Name Surname</th>
+                                                <td class="text-left">{{profile.user_name}}</td>
+                                            </tr>
+                                            <tr class="">
+                                                <th class="text-left">Email</th>
+                                                <td class="text-left">{{profile.user.email}}</td>
+                                            </tr>
+                                            <tr class="">
+                                                <th class="text-left">University</th>
+                                                <td class="text-left">{{profile.university}}</td>
+                                            </tr>
+                                            <tr class="">
+                                                <th class="text-left">Department</th>
+                                                <td class="text-left">{{profile.department}}</td>
+                                            </tr>
+                                            <tr class="">
+                                                <th class="text-left">Class</th>
+                                                <td class="text-left">{{profile.grade}}</td>
+                                            </tr>
+                                            <tr class="">
+                                                <th class="text-left">City</th>
+                                                <td class="text-left">{{profile.city}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ol>
+        </div>
+
+    </div>
+    <div class="row">
+{% endblock %}

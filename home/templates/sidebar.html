@@ -1,29 +1,30 @@
-        {% load static %}
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <div class="left-sidebar">
+{% load static %}
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="left-sidebar">
 
-                        <h2>Category</h2>
-                            <div class="panel-heading">
+                    <h2>Category</h2>
+                    <div class="panel-heading">
 
-                                        {% load mptt_tags %}
-                                            <ul id="menu-v">
-                                            {% recursetree category %}
-                                                <li><a href="/category/{{ node.id }}/{{ node.slug }}" {% if not node.is_leaf_node %} class="arrow" {% endif %}>{{ node.title }}</a>
+                        {% load mptt_tags %}
+                        <ul id="menu-v">
+                            {% recursetree category %}
+                                <li><a href="/category/{{ node.id }}/{{ node.slug }}" {% if not node.is_leaf_node %}
+                                       class="arrow" {% endif %}>{{ node.title }}</a>
 
-                                                    {% if not node.is_leaf_node %}
-                                                        <ul>
-                                                            <a href="/category/{{ node.id }}/{{ node.slug }}" >{{ children }}</a>
-                                                        </ul>
-                                                    {% endif %}
+                                    {% if not node.is_leaf_node %}
+                                        <ul>
+                                            <a href="/category/{{ node.id }}/{{ node.slug }}">{{ children }}</a>
+                                        </ul>
+                                    {% endif %}
 
-                                                </li>
-                                            {% endrecursetree %}
-                                            </ul>
-                        </div>
-                    </div><!--/category-products-->
-                </div>
+                                </li>
+                            {% endrecursetree %}
+                        </ul>
+                    </div>
+                </div><!--/category-products-->
+            </div>
 
 
