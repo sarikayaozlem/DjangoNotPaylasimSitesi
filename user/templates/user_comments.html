@@ -1,0 +1,87 @@
+{% extends "homebase.html" %}
+
+
+
+{% block title %} Note Comments {{ setting.company }}{% endblock %}
+{% block keywords %}{{ setting.keywords }}{% endblock %}
+{% block description %}{{ setting.description }}{% endblock %}
+
+{% block head %}
+    <link rel='shortcut icon' type='image/x-icon' href='{{ setting.icon.url }}'/>
+{% endblock %}
+
+
+
+{% block content %}
+    <section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="/">Home</a>
+                <li>/</li>
+                </li>
+                <li class="active">User Comments</li>
+                <hr>
+                <div id="contact-page" class="container">
+                    <div class="bg">
+                        <div class="row">
+                            <div class="col-sm-12">
+
+                                <div class="col-sm-3">
+                                    {% include "user_panel.html" %}
+                                </div>
+
+                                <div class="col-sm-8">
+                                    <div class="contact-info">
+                                        <h2 class="title text-center">User Information</h2>
+                                        {% if messages %}
+                                            {% for message in messages %}
+                                                <div class="alert alert-{{ message.tags }}" role="alert">
+                                                    {{ message }}
+                                                </div>
+                                            {% endfor %}
+                                        {% endif %}
+                                        <table class="table table-responsive">
+
+                                            <tr class="">
+                                                <br>
+
+                                                <th class="text-left">Note</th>
+                                                <th class="text-left">Rate</th>
+                                                <th class="text-left">Subject</th>
+                                                <th class="text-left">Comment</th>
+                                                <th class="text-left">Status</th>
+                                                <th class="text-left">Date</th>
+                                                <th class="text-left">Detail</th>
+
+                                            </tr>
+                                            {% for rs in comments %}
+                                                <tr class="">
+                                                    <td class="text-left"><a
+                                                            href="/product/{{ rs.product_id }}/{{ rs.product.slug }}"
+                                                            style="color: black"><b>{{ rs.product.title }}</b></a></td>
+                                                    <td class="text-left">{{ rs.rate }}</td>
+                                                    <td class="text-left">{{ rs.subject }}</td>
+                                                    <td class="text-left">{{ rs.comment }}</td>
+                                                    <td class="text-left">{{ rs.status }}</td>
+                                                    <td class="text-left">{{ rs.create_at }}</td>
+                                                    <td class="text-left">{{ rs.city }}</td>
+                                                    <td class="text-left"><a class="btn btn-primary pull-left"
+                                                                             href="/user/deletecomment/{{ rs.id }}"
+                                                                             onclick="return confirm('Will be Delete! Are you Sure?')">Delete</a>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ol>
+        </div>
+
+    </div>
+    <div class="row">
+{% endblock %}
