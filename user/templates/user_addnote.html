@@ -2,7 +2,7 @@
 
 
 
-{% block title %}Update Profile {{ setting.company }}{% endblock %}
+{% block title %}İletişim-{{ setting.company }}{% endblock %}
 {% block keywords %}{{ setting.keywords }}{% endblock %}
 {% block description %}{{ setting.description }}{% endblock %}
 
@@ -20,7 +20,7 @@
         <li><a href="/">Home</a>
         <li>/</li>
         </li>
-        <li class="active">Update Profile</li>
+        <li class="active">İletişim</li>
         <hr>
         <div id="contact-page" class="container">
             <div class="bg">
@@ -36,7 +36,7 @@
 
                                     <div class="col-sm-9">
                                         <div class="contact-form">
-                                            <h2 class="title text-center">User Information</h2>
+                                            <h2 class="title text-center">Add Note</h2>
                                             <div class="status alert alert-success" style="display: none"></div>
 
                                             {% if messages %}
@@ -51,9 +51,10 @@
 
                                             <form class="" action="" method="post" enctype="multipart/form-data">
                                                 {% csrf_token %}
-                                                {{ user_form.as_p }}
-                                                {{ profile_form.as_p }}
-                                                <input type="submit" class="btn btn-primary pull-right" value="Update">
+                                                {{ form.media }}
+                                                {{ form.as_p }}
+
+                                                <input type="submit" class="btn btn-primary pull-right" value="Kaydet">
                                             </form>
                                         </div>
                                     </div>

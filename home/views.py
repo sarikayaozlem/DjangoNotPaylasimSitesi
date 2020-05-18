@@ -79,7 +79,7 @@ def category_products(request, id, slug):
 
 def product_detail(request, id, slug):
     category = Category.objects.all()
-    product = Product.objects.get(pk=id)
+    product = Product.objects.get(pk=id, status='True')
     images = Files.objects.filter(note_id=id)
     comments = Comment.objects.filter(product_id=id, status='True')
     context = {'product': product,

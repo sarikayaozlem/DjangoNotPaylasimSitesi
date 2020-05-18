@@ -17,15 +17,15 @@ class CategoryAdmin(MPTTModelAdmin):
 
 
 class ProductAdmin(admin.ModelAdmin):
-    list_display = ['title', 'category', 'file_tag', 'status']
-    readonly_fields = ('file_tag',)
+    list_display = ['title', 'category', 'image_tag', 'status']
+    readonly_fields = ('image_tag',)
     list_filter = ['status', 'category']
     inlines = [NoteFileInline]
     prepopulated_fields = {'slug': ('title',)}
 
 
 class FilesAdmin(admin.ModelAdmin):
-    list_display = ['title', 'note', 'file']
+    list_display = ['title', 'note', 'image']
 
 class CategoryAdmin2(DraggableMPTTAdmin):
     mptt_indent_field = "title"

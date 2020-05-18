@@ -1,14 +1,17 @@
+
+from ckeditor.widgets import CKEditorWidget
 from ckeditor_uploader.fields import RichTextUploadingField
 from django.contrib.auth.models import User
 from django.db import models
-from django.forms import ModelForm
+from django.db.models import Choices
+from django.forms import ModelForm, Select, TextInput, FileInput, forms, ClearableFileInput
 from django.urls import reverse
 from django.utils.safestring import mark_safe
 
 # Create your models here.
 #from django.utils.safestring import mark_safe
 from mptt.fields import TreeForeignKey
-from mptt.models import MPTTModel
+from mptt.models import MPTTModel, MPTTModelBase
 
 
 class Category(MPTTModel):
@@ -26,15 +29,13 @@ class Category(MPTTModel):
     create_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
-
-
     class MPTTMeta:
         #level_attr = 'mptt_level'
         order_insertion_by = ['title']
 
     def __str__(self):
         full_path = [self.title]
-        k=self.parent
+        k = self.parent
         while k is not None:
             full_path.append(k.title)
             k = k.parent
@@ -51,10 +52,11 @@ class Product(models.Model):
         ('False', 'Hayır'),
     )
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.SET_NULL, null=True)
     title = models.CharField(max_length=125)
     keywords = models.CharField(max_length=255)
     description = models.CharField(max_length=255)
-    image = models.FileField(blank=True, upload_to='images/')
+    image = models.FileField(blank=True, null=True, upload_to='images/')
     detail = RichTextUploadingField()
     slug = models.SlugField(null=False, unique=True)
     status = models.CharField(max_length=10, choices=STATUS)
@@ -64,12 +66,12 @@ class Product(models.Model):
     def __str__(self):
         return self.title
 
-    def file_tag(self):
+    def image_tag(self):
         if self.image:
             return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
         else:
             return 'No Image'
-    file_tag.short_description = 'File'
+    image_tag.short_description = 'File'
 
     def get_absolute_url(self):
         return reverse('product_detail', kwargs={'slug': self.slug})
@@ -77,12 +79,22 @@ class Product(models.Model):
 
 
 class Files(models.Model):
-    note = models.ForeignKey(Product, on_delete=models.CASCADE)
+    note = models.ForeignKey(Product, on_delete=models.CASCADE, null=True)
     title = models.CharField(max_length=50, blank=True)
-    file = models.FileField(blank=True, upload_to='files/')
+    image = models.ImageField(blank=True, upload_to='images/')
 
     def __str__(self):
         return self.title
+
+    def image_tag(self):
+        return mark_safe('<img src="{}" height="50"/>'.format(self.image.url))
+    image_tag.short_description = 'Image'
+
+
+class ProductFilesForm(ModelForm):
+    class Meta:
+        model = Files
+        fields = ['title', 'image']
 
 
 
@@ -110,3 +122,22 @@ class CommentForm(ModelForm):
     class Meta:
         model = Comment
         fields = ['subject', 'comment', 'rate']
+
+
+
+
+class ProductForm(ModelForm):
+    class Meta:
+        model = Product
+        fields = ['category', 'title', 'slug', 'keywords', 'description', 'image', 'detail']
+
+        widgets = {
+            'category': Select(attrs={'class': 'form-control'}),
+            'title': TextInput(attrs={'class': 'form-control', 'placeholder': 'Title'}),
+            'slug': TextInput(attrs={'class': 'form-control', 'placeholder': 'slug'}),
+            'keywords': TextInput(attrs={'class': 'form-control', 'placeholder': 'Keywords'}),
+            'description': TextInput(attrs={'class': 'form-control', 'placeholder': 'Description'}),
+            'image': ClearableFileInput(attrs={'class': 'form-control', 'multiple': True}),
+            'detail': CKEditorWidget()
+        }
+
