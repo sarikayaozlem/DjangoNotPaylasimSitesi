@@ -6,7 +6,7 @@ from django.shortcuts import render
 from django.contrib import messages
 # Create your views here.
 from home.forms import SearchForm, SignUpForm
-from home.models import Setting, ContactFormu, ContactFormMessage, UserProfile
+from home.models import Setting, ContactFormu, ContactFormMessage, UserProfile, FAQ
 from product.models import Product, Category, Files, Comment
 
 
@@ -149,6 +149,7 @@ def login_view(request):
     return render(request, 'login.html', context)
 
 def signup_view(request):
+    setting = Setting.objects.get(pk=1)
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
@@ -168,6 +169,19 @@ def signup_view(request):
     form = SignUpForm()
     category = Category.objects.all()
     context = {'category': category,
-               'form': form}
+               'form': form,
+               'setting': setting}
 
     return render(request, 'signup.html', context)
+
+
+def faq(request):
+    category = Category.objects.all()
+    setting = Setting.objects.get(pk=1)
+    faq = FAQ.objects.all().order_by('ordernumber')
+    context = {'category': category,
+               'faq': faq,
+               'setting': setting
+               }
+
+    return render(request, 'faq.html', context)
