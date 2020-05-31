@@ -36,16 +36,16 @@
                                             <div class="carousel-inner">
 
                                                 <div class="item active">
-                                                  <a href="{{product.image.url}}"><img src="{{product.image.url}}" alt="" style="height: 100px"></a>
+                                                  <a href="{{product.image.url}}"><img src="{{product.image.url}}" alt="" style="height: 75px"></a>
                                                   {% for rs in images %}
-                                                    <a href="{{rs.image.url}}"><img src="{{rs.image.url}}" alt="" style="height: 100px"></a>
+                                                    <a href="{{rs.image.url}}"><img src="{{rs.image.url}}" alt="" style="height: 75px"></a>
                                                     {% endfor %}
 
                                                 </div>
                                                 <div class="item">
-                                                  <a href="{{product.image.url}}"><img src="{{product.image.url}}" alt="" style="height: 100px"></a>
+                                                  <a href="{{product.image.url}}"><img src="{{product.image.url}}" alt="" style="height: 75px"></a>
                                                   {% for rs in images %}
-                                                    <a href="{{rs.image.url}}"><img src="{{rs.image.url}}" alt="" style="height: 100px"></a>
+                                                    <a href="{{rs.image.url}}"><img src="{{rs.image.url}}" alt="" style="height: 75px"></a>
                                                     {% endfor %}
 
                                                 </div>
@@ -67,7 +67,8 @@
 
                                         <h2>{{product.title}}</h2>
 
-                                        <h5><span>Nota ulaşmak için :</span></h5>
+                                        <h5><span></span></h5>
+                                        <p>{{ product.description }}</p>
                                         <p>{{ product.detail |safe }}</p>
 
 

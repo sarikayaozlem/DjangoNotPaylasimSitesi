@@ -15,12 +15,12 @@ from product.models import Product, Category, Files, Comment
 
 def index(request):
     setting = Setting.objects.get(pk=1)
-    sliderdata = Product.objects.all()[1:5]
+    sliderdata = Product.objects.filter(status=True)[1:5]
     sliderone = Product.objects.only()[0]
-    category = Category.objects.all()
-    dayproducts = Product.objects.all()[:4]
-    lastproducts = Product.objects.all().order_by('-id')[:4]
-    randomproducts = Product.objects.all().order_by('?')[:4]
+    category = Category.objects.filter(status=True)
+    dayproducts = Product.objects.filter(status=True)[:4]
+    lastproducts = Product.objects.filter(status=True).order_by('-id')[:4]
+    randomproducts = Product.objects.filter(status=True).order_by('?')[:4]
 
     context = {'setting': setting,
                'sliderdata': sliderdata,
@@ -70,7 +70,7 @@ def iletisim(request):
 def category_products(request, id, slug):
     category = Category.objects.all()
     categorydata = Category.objects.get(pk=id)
-    products = Product.objects.filter(category_id=id)
+    products = Product.objects.filter(category_id=id,  status=True)
     context = {'products': products,
                'category': category,
                'categorydata': categorydata}
