@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="14d01286-8ffb-455e-8991-c9b8e07a3ef8" name="Default Changelist" comment="">
+    <list default="true" id="14d01286-8ffb-455e-8991-c9b8e07a3ef8" name="Default Changelist" comment="Pycharm #26 Last Edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user/templates/user_panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_panel.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,9 @@
       <workItem from="1590237398437" duration="3692000" />
       <workItem from="1590400019253" duration="867000" />
       <workItem from="1590473994866" duration="599000" />
-      <workItem from="1590955737716" duration="3473000" />
+      <workItem from="1590955737716" duration="3935000" />
+      <workItem from="1591027298816" duration="39000" />
+      <workItem from="1591033838053" duration="660000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm Upload Deneme">
       <created>1585395754694</created>
@@ -442,7 +443,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590960118989</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Pycharm #26 Last Edit">
+      <created>1590962240225</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1590962240225</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Pycharm #26 Last Edit">
+      <created>1590962299296</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1590962299296</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -459,7 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Pycharm #7 Home Setting" />
     <MESSAGE value="Pycharm #8 Home Favicon" />
     <MESSAGE value="Pycharm #9 Admin Panel Ckeditor" />
     <MESSAGE value="Pycharm #10 Hakkımızda Referaranslar Iletisim" />
@@ -484,7 +498,8 @@
     <MESSAGE value="Pycharm #23 User Note Add &amp; Note Gallery" />
     <MESSAGE value="Pycharm #24 FAQ" />
     <MESSAGE value="Pycharm #25 Last Edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #25 Last Edit" />
+    <MESSAGE value="Pycharm #26 Last Edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pycharm #26 Last Edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Inspections" timestamp="1589815890234">
@@ -500,11 +515,11 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588937502313" />
-    <state x="1538" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1590962239200">
+    <state x="1538" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1590962445546">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="172" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589818056560" />
-    <state x="1538" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1590962239200" />
+    <state x="1538" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1590962445546" />
     <state x="172" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589458605318" />
     <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585395984360">
       <screen x="0" y="0" width="1366" height="728" />
@@ -534,23 +549,23 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1589233183908" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590962242703">
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1590962478605">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589818060274" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1590962242703" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1590962478605" />
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589458607661" />
-    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1590956050560">
+    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591033860768">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589829164109" />
-    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1590956050560" />
+    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591033860768" />
     <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589538458581" />
-    <state x="1858" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590962214838">
+    <state x="1858" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591034571539">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589818024421" />
-    <state x="1858" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1590962214838" />
+    <state x="1858" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591034571539" />
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589458572406" />
     <state x="425" y="206" key="search.everywhere.popup" timestamp="1589119087762">
       <screen x="0" y="0" width="1366" height="728" />
