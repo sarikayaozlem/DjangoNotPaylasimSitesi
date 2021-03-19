@@ -10,127 +10,88 @@
 
 
 {% block content %}
+
+
     <section id="cart_items">
-        <div class="container">
-            <div class="breadcrumbs">
-                <ol class="breadcrumb">
-                    <li><a href="http://127.0.0.1:8000/">Home</a><li>/</li></li>
-                    <li><a href="/category/{{product.category_id}}/{{product.category.slug}}">{{product.category}}</a><li>/</li></li>
-                    <li class="active">{{product.title}}</li>
-                    <hr>
 
-            <div id="contact-page" class="container">
-                <div class="bg">
-                    <div class="row">
-                        <div class="col-sm-12 ">
-                            <div class="col-sm-12 padding-right">
-                                <div class="product-details"><!--product-details-->
-                                    <div class="col-sm-1"></div>
-                                <div class="col-sm-4">
-                                    <div class="view-product" id="content"><a href="{{product.image.url}}">
-                                        <img src="{{product.image.url}}" alt="" style="height: 350px " id="image"/></a>
-                                        <h3>FILE</h3>
-                                    </div>
-                                    <div id="similar-product" class="carousel slide" data-ride="carousel">
-                                          <!-- Wrapper for slides -->
-                                            <div class="carousel-inner">
+    <div class="container">
 
-                                                <div class="item active">
-                                                  <a href="{{product.image.url}}"><img src="{{product.image.url}}" alt="" style="height: 75px"></a>
-                                                  {% for rs in images %}
-                                                    <a href="{{rs.image.url}}"><img src="{{rs.image.url}}" alt="" style="height: 75px"></a>
-                                                    {% endfor %}
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="http://127.0.0.1:8000/">Home</a><li>/</li></li>
+                <li><a href="/category/{{product.category_id}}/{{product.category.slug}}">{{product.category}}</a><li>/</li></li>
+                <li class="active">{{product.title}}</li>
+            </ol>
+        </div><!--/breadcrums-->
+    </div>
 
-                                                </div>
-                                                <div class="item">
-                                                  <a href="{{product.image.url}}"><img src="{{product.image.url}}" alt="" style="height: 75px"></a>
-                                                  {% for rs in images %}
-                                                    <a href="{{rs.image.url}}"><img src="{{rs.image.url}}" alt="" style="height: 75px"></a>
-                                                    {% endfor %}
+    <div id="contact-page" class="container">
 
-                                                </div>
+        <div class="bg">
+            <div class="row ce">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div class="col-sm-12 padding-right">
+                        <div class="product-details"><!--product-details-->
+                            <div class="col-sm-12">
+                                <h1 style="color: orange">{{ product.title }}</h1>
+                                <p>{{ product.create_at }}</p>
+                                <br>
+                                <p>{{product.detail | safe}}</p>
+                            </div>
 
-
-                                            </div>
-
-                                          <!-- Controls -->
-                                          <a class="left item-control" href="#similar-product" data-slide="prev">
-                                            <i class="fa fa-angle-left"></i>
-                                          </a>
-                                          <a class="right item-control" href="#similar-product" data-slide="next">
-                                            <i class="fa fa-angle-right"></i>
-                                          </a>
-                                    </div>
-                                </div>
-                                <div class="col-sm-7">
-                                    <div class="product-information"><!--/product-information-->
-
-                                        <h2>{{product.title}}</h2>
-
-                                        <h5><span></span></h5>
-                                        <p>{{ product.description }}</p>
-                                        <p>{{ product.detail |safe }}</p>
-
-
-                                    </div><!--/product-information-->
-                                </div>
-                            </div><!--/product-details-->
-				</div>
-                        </div>
+                        </div><!--/product-details-->
                     </div>
                 </div>
             </div>
-    </ol>
-</div><!--/breadcrums-->
-<div class="category-tab shop-details-tab"><!--category-tab-->
-                                <div class="col-sm-12">
-                                    <ul class="nav nav-tabs">
-                                        <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
+        </div>
+    </div>
+<div class="container">
+    <div class="category-tab shop-details-tab"><!--category-tab-->
+        <div class="col-sm-12">
+            <ul class="nav nav-tabs">
 
-                                        <li ><a href="#reviews" data-toggle="tab">Reviews</a></li>
-                                    </ul>
+
+                <li class="active"><a href="#reviews" data-toggle="tab">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="tab-content">
+
+            <div class="tab-pane fade active in" id="reviews" >
+                <div class="col-sm-12">
+                    <div class="col-sm-6">
+                        {% for rs in comments %}
+                            <ul>
+                                <li><a href=""><i class="fa fa-user"></i>{{ rs.user.first_name }}</a></li>
+
+                                <li><a href=""><i class="fa fa-calendar-o"></i>{{ rs.create_at }}</a></li>
+                                <li>
+                                    <i class="fa fa-star{% if rs.rate < 1 %}-o{% endif %}" style="color: yellowgreen"></i>
+                                    <i class="fa fa-star{% if rs.rate < 2 %}-o{% endif %}" style="color: yellowgreen"></i>
+                                    <i class="fa fa-star{% if rs.rate < 3 %}-o{% endif %}" style="color: yellowgreen"></i>
+                                    <i class="fa fa-star{% if rs.rate < 4 %}-o{% endif %}" style="color: yellowgreen"></i>
+                                    <i class="fa fa-star{% if rs.rate < 5 %}-o{% endif %}" style="color: yellowgreen"></i>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li><b>{{ rs.subject }}</b></li><br>
+                                <li><p>{{ rs.comment }}</p></li>
+                            </ul>
+                        {% endfor %}
+                    </div>
+                    <div class="col-sm-6">
+                        <h4><b>Write Your Review</b></h4>
+                        {% if messages %}
+                            {% for message in messages %}
+                                <div class="alert alert-{{ message.tags }}" role="alert">
+                                    {{ message }}
                                 </div>
-                                <div class="tab-content">
-                                    <div class="tab-pane fade active in" id="details" >
-                                        <div class="col-sm-3">
-                                            <p>{{ product.detail | safe }}</p>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade " id="reviews" >
-                                        <div class="col-sm-12">
-                                            <div class="col-sm-6">
-                                                {% for rs in comments %}
-                                                    <ul>
-                                                        <li><a href=""><i class="fa fa-user"></i>{{ rs.user.first_name }}</a></li>
-
-                                                        <li><a href=""><i class="fa fa-calendar-o"></i>{{ rs.create_at }}</a></li>
-                                                        <li>
-                                                            <i class="fa fa-star{% if rs.rate < 1 %}-o{% endif %}" style="color: yellowgreen"></i>
-                                                            <i class="fa fa-star{% if rs.rate < 2 %}-o{% endif %}" style="color: yellowgreen"></i>
-                                                            <i class="fa fa-star{% if rs.rate < 3 %}-o{% endif %}" style="color: yellowgreen"></i>
-                                                            <i class="fa fa-star{% if rs.rate < 4 %}-o{% endif %}" style="color: yellowgreen"></i>
-                                                            <i class="fa fa-star{% if rs.rate < 5 %}-o{% endif %}" style="color: yellowgreen"></i>
-                                                        </li>
-
-                                                    </ul>
-                                                    <ul>
-                                                        <li><b>{{ rs.subject }}</b></li><br>
-                                                        <li><p>{{ rs.comment }}</p></li>
-                                                    </ul>
-                                                {% endfor %}
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <h4><b>Write Your Review</b></h4>
-                                                {% if messages %}
-                                                    {% for message in messages %}
-                                                        <div class="alert alert-{{ message.tags }}" role="alert">
-                                                            {{ message }}
-                                                        </div>
-                                                    {% endfor %}
-                                                {% endif %}
-                                                <form  action="/product/addcomment/{{ product.id }}" method="post">
-                                                    {% csrf_token %}
-                                                    <span><input class="input" type="text" name="subject" placeholder="Subject"/>
+                            {% endfor %}
+                        {% endif %}
+                        <form  action="/product/addcomment/{{ product.id }}" method="post">
+                            {% csrf_token %}
+                            <span><input class="input" type="text" name="subject" placeholder="Subject"/>
 
                                                     <textarea class="input"  name="comment" placeholder="Your Review"></textarea>
 
@@ -162,12 +123,13 @@
                                                     </div>
                                                     </span>
 
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                                </div>
-                            </div><!--/category-tab-->
+    </div>
+    </div><!--/category-tab-->
+    </div>
 {% endblock %}

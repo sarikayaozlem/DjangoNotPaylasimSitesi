@@ -14,15 +14,15 @@
 
                             <div class="item active">
                                 {% for rs in dayproducts %}
-                                <div class="col-sm-3">
+                                <div class="col-sm-6">
                                     <div class="product-image-wrapper">
-                                        <div class="single-products">
+                                        <div class="single-products" style="background: #a58e63">
                                             <div class="productinfo text-center">
                                                 <a href="/product/{{ rs.id }}/{{ rs.slug }}">
-                                                    <img src="{{rs.image.url}}" alt="" style="height: 350px"/>
+                                                    <img src="{{rs.image.url}}" alt="" style="height: 350px" />
                                                 </a>
                                                 <h2></h2>
-                                                <h5>{{ rs.title }}</h5>
+                                                <h5 style="color: white">{{ rs.title }}</h5>
                                                 <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="btn btn-default add-to-cart"><i></i>Nota Bak</a>
                                             </div>
 
@@ -34,89 +34,9 @@
 
 
 
-                        </div>
-                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                          </a>
-                          <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                          </a>
-                    </div>
+
                 </div><!--/recommended_items-->
-                <div class="recommended_items"><!--recommended_items-->
-                    <h2 class="title text-center">Son Eklenenler</h2>
 
-                    <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-
-                            <div class="item active">
-                                {% for rs in lastproducts %}
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <a href="/product/{{ rs.id }}/{{ rs.slug }}">
-                                                    <img src="{{rs.image.url}}" alt=""  style="height: 350px"/>
-                                                </a>
-                                                <h2></h2>
-                                                <h5>{{ rs.title }}</h5>
-                                                <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="btn btn-default add-to-cart"><i></i>Nota Bak</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
-
-
-
-                        </div>
-                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                          </a>
-                          <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                          </a>
-                    </div>
-                </div><!--/recommended_items-->
-                <div class="recommended_items"><!--recommended_items-->
-                    <h2 class="title text-center">Sizin İçin Seçtiklerimiz</h2>
-
-                    <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-
-                            <div class="item active">
-                                {% for rs in randomproducts %}
-                                <div class="col-sm-3">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <a href="/product/{{ rs.id }}/{{ rs.slug }}">
-                                                    <img src="{{rs.image.url}}" alt="" style="height: 350px"/>
-                                                </a>
-                                                <h2></h2>
-                                                <h5>{{ rs.title }}</h5>
-                                                <a href="/product/{{ rs.id }}/{{ rs.slug }}" class="btn btn-default add-to-cart"><i></i>Nota Bak</a>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
-
-
-
-                        </div>
-                         <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                            <i class="fa fa-angle-left"></i>
-                          </a>
-                          <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                            <i class="fa fa-angle-right"></i>
-                          </a>
-                    </div>
-                </div><!--/recommended_items-->
             </div>
         </div>
     </div>

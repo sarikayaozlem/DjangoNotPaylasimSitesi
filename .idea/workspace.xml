@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14d01286-8ffb-455e-8991-c9b8e07a3ef8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/project1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/project1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/project1/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/templates/user_addnote.html" beforeDir="false" afterPath="$PROJECT_DIR$/user/templates/user_addnote.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/content.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/content.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/faq.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/faq.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/homebase.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/homebase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/iletisim.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/iletisim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/product_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/product_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/home/templates/slider.html" beforeDir="false" afterPath="$PROJECT_DIR$/home/templates/slider.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +192,30 @@
       <workItem from="1590955737716" duration="3935000" />
       <workItem from="1591027298816" duration="39000" />
       <workItem from="1591033838053" duration="2101000" />
-      <workItem from="1591192284069" duration="1994000" />
+      <workItem from="1591192284069" duration="2079000" />
+      <workItem from="1591206794159" duration="2156000" />
+      <workItem from="1591282623085" duration="67000" />
+      <workItem from="1592304755748" duration="7000" />
+      <workItem from="1593289470634" duration="1456000" />
+      <workItem from="1593366915384" duration="5063000" />
+      <workItem from="1593855172363" duration="35000" />
+      <workItem from="1594024727860" duration="3706000" />
+      <workItem from="1594210789588" duration="187000" />
+      <workItem from="1594235719683" duration="4108000" />
+      <workItem from="1594305482246" duration="15000" />
+      <workItem from="1594374963810" duration="4717000" />
+      <workItem from="1594406601604" duration="6257000" />
+      <workItem from="1594495074626" duration="633000" />
+      <workItem from="1594574969174" duration="4102000" />
+      <workItem from="1594581122648" duration="1242000" />
+      <workItem from="1594637581709" duration="1999000" />
+      <workItem from="1594640432222" duration="15000" />
+      <workItem from="1595508786328" duration="831000" />
+      <workItem from="1595590719821" duration="70000" />
+      <workItem from="1595674253752" duration="11000" />
+      <workItem from="1595752519698" duration="440000" />
+      <workItem from="1596390893237" duration="4000" />
+      <workItem from="1596393520041" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Pycharm Upload Deneme">
       <created>1585395754694</created>
@@ -474,7 +504,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591035410029</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Pycharm #26 Last Edit">
+      <created>1591194339739</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1591194339739</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,33 +556,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Pycharm #26 Last Edit" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="275" y="22" key="#Inspections" timestamp="1589815890234">
+    <state x="275" y="22" key="#Inspections" timestamp="1594376881220">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#Inspections/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589815890234" />
-    <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1587017881753" />
-    <state x="275" y="22" key="#Notifications" timestamp="1585434328378">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="22" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1585434328378" />
+    <state x="275" y="22" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1594376881220" />
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588937502313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1588937502313" />
-    <state x="1538" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1591035409630">
+    <state x="432" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1593289632700">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="432" y="200" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1366.728@0.0.1366.728" timestamp="1593289632700" />
+    <state x="1538" y="0" width="1004" height="728" key="CommitChangelistDialog2" timestamp="1591194338963">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="172" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589818056560" />
-    <state x="1538" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591035409630" />
+    <state x="1538" y="0" key="CommitChangelistDialog2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591194338963" />
     <state x="172" y="0" width="1004" height="728" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1589458605318" />
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog" timestamp="1585395984360">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="92" y="92" width="1182" height="544" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1585395984360" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1583424645912">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583424645912" />
     <state width="238" height="177" key="GridCell.Tab.0.bottom" timestamp="1588173293980">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -566,27 +595,27 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1589233183908" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1591035412138">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1594027339869">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589818060274" />
-    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591035412138" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1589458607661" />
-    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1591192309847">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591194342494" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1594027339869" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1596401568112">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589829164109" />
-    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591192309847" />
-    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589538458581" />
-    <state x="1858" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591194325761">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1592304755708" />
+    <state x="1745" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591206869277" />
+    <state x="379" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1596401568112" />
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596401575399">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1589818024421" />
     <state x="1858" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1591194325761" />
-    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1589458572406" />
-    <state x="425" y="206" key="search.everywhere.popup" timestamp="1589119087762">
+    <state x="492" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1596401575399" />
+    <state x="425" y="206" key="search.everywhere.popup" timestamp="1594027325751">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="425" y="206" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1589119087762" />
+    <state x="425" y="206" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594027325751" />
   </component>
 </project>
