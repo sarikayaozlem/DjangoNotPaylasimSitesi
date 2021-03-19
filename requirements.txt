@@ -19,7 +19,7 @@ jedi==0.16.0
 openpyxl==3.0.3
 parso==0.6.2
 pickleshare==0.7.5
-Pillow==7.0.0
+Pillow>=8.1.1
 prompt-toolkit==3.0.5
 public==2019.4.13
 Pygments==2.6.1
